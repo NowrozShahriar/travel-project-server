@@ -18,7 +18,7 @@ async function run() {
         await client.connect();
         const database = client.db('good-travel');
         const servicesCollection = database.collection('services');
-        const ordersCollection = database.collection('orders')
+        const ordersCollection = database.collection('orders');
 
         // GET Services API
         app.get('/services', async (req, res) => {
